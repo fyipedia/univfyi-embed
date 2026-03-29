@@ -1,21 +1,50 @@
 # UnivFYI Embed Widget
 
-> Embeddable UnivFYI widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> University rankings, programs. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/univfyi-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/univfyi-embed@1/dist/embed.min.js"></script>
+<div data-univfyi="entity" data-slug="example"></div>
+```
+
+## Available Widget Types (6)
+
+- entity: `data-univfyi="entity"`
+- glossary: `data-univfyi="glossary"`
+- guide: `data-univfyi="guide"`
+- compare: `data-univfyi="compare"`
+- search: `data-univfyi="search"`
+- faq: `data-univfyi="faq"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-univfyi="entity" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/univfyi-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://univfyi.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://univfyi.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://univfyi.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://univfyi.com
 - Widget docs: https://widget.univfyi.com
-- npm: https://www.npmjs.com/package/univfyi-embed
+- API documentation: https://univfyi.com/developers/
+- npm package: https://www.npmjs.com/package/univfyi-embed
 - GitHub: https://github.com/fyipedia/univfyi-embed
-- API: https://univfyi.com/developers/
 
-## Guide FYI Widget Family
+## Guide FYI Widget Network
 
 - [CalcFYI Widget](https://widget.calcfyi.com)
 - [SalaryFYI Widget](https://widget.salaryfyi.com)
