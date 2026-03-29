@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# UnivFYI Embed Widget
+# Main site: https://univfyi.com
+# Widget docs: https://widget.univfyi.com
+# npm: https://www.npmjs.com/package/univfyi-embed
